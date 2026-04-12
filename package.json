@@ -1,0 +1,32 @@
+{
+  "name": "zkvoting_kltn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TP4uit/ZKVoting_KLTN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/TP4uit/ZKVoting_KLTN/issues"
+  },
+  "homepage": "https://github.com/TP4uit/ZKVoting_KLTN#readme",
+  "devDependencies": {
+    "@types/node": "^22.19.17",
+    "hardhat": "^3.3.0",
+    "typescript": "~5.8.0"
+  },
+  "dependencies": {
+    "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
+    "ethers": "^6.16.0",
+    "snarkjs": "^0.7.6"
+  }
+}
