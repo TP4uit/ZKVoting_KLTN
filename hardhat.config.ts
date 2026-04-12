@@ -1,7 +1,9 @@
-import { defineConfig } from "hardhat/config";
+import { HardhatUserConfig } from "hardhat/config";
+import HardhatIgnitionEthersPlugin from "@nomicfoundation/hardhat-ignition-ethers";
 
-export default defineConfig({
-  solidity: {
-    version: "0.8.28",
-  },
-});
+const config: HardhatUserConfig = {
+  solidity: "0.8.28",
+  plugins: [HardhatIgnitionEthersPlugin], // <-- Đây chính là "công tắc" kích hoạt lệnh ignition
+};
+
+export default config;
