@@ -2,7 +2,11 @@
 import { buildModule } from "@nomicfoundation/hardhat-ignition/modules";
 
 export default buildModule("ElectionModule", (m) => {
-  const election = m.contract("Election");
+  // 1. Deploy Verifier trước
+  const verifier = m.contract("Groth16Verifier");
   
-  return { election };
+  // 2. Deploy Election và truyền địa chỉ Verifier vào constructor
+  const election = m.contract("Election", [verifier]);
+  
+  return { verifier, election };
 });
